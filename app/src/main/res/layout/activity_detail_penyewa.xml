@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/titleView1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/purple">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/back"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="Detail Penyewa"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleView1"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Identitas Penyewa"
+                android:textColor="@color/purple"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Nama Penyewa :"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/HNama"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  Nikko Eka Saputra"
+                android:textColor="@color/purple"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Alamat :"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/HAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  Jakarta"
+                android:textColor="@color/purple"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="No. Telp/HP :"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/HTelp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  08988190546"
+                android:textColor="@color/purple"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Data Mobil"
+                android:textColor="@color/purple"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Merk Mobil :"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/HMerk"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  Kijang Innova"
+                android:textColor="@color/purple"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Harga :"
+                android:textColor="#000000"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/HHarga"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  Rp. 500000"
+                android:textColor="@color/purple"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Promo :"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/HPromo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  10%"
+                android:textColor="@color/purple"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Lama Sewa :"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/HLamaSewa"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  5 Hari"
+                android:textColor="@color/purple"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Total Harga :"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/HTotal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="  Rp. 350000"
+                android:textColor="@color/purple"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
